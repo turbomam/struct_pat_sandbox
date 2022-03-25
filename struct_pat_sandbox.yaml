@@ -19,7 +19,7 @@ slots:
   street_address:
     recommended: true
 classes:
-  person:
+  Person:
     slots:
       - name
       - street_address

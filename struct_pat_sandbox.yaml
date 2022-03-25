@@ -18,6 +18,7 @@ slots:
     identifier: true
   street_address:
     recommended: true
+    pattern: '^[^,]+, .+, [A-Z]{2} \d{5}$'
 classes:
   Person:
     slots:

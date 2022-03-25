@@ -1,0 +1,25 @@
+name: struct_pat_sandbox
+description: Schema for creating Data Harmonizer interfaces for biosamples based on
+  MIxS and other standards
+id: https://example.com/struct_pat_sandbox
+imports:
+- linkml:types
+prefixes:
+  struct_pat_sandbox:
+    prefix_prefix: struct_pat_sandbox
+    prefix_reference: https://example.com/struct_pat_sandbox/
+  linkml:
+    prefix_prefix: linkml
+    prefix_reference: https://w3id.org/linkml/
+default_prefix: struct_pat_sandbox
+default_range: string
+slots:
+  name:
+    identifier: true
+  street_address:
+    recommended: true
+classes:
+  person:
+    slots:
+      - name
+      - street_address
